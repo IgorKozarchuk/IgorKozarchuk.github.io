@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#content {
+    flex: 1;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-item {
+	flex: 1;
+	align-items: center;
+	width: 50%;
+}
+
+.box {
+	min-height: 800px;
+}
+
+.w3-half img, .w3-third img {
+	width: 100%;
+}
+
+a[href="#work"], a[href="#resume"], a[href="#contact"] {
+	text-transform: uppercase;
+}
+
+#raccoon-img {
+	width: 40px;
+}
+
+#up-btn {
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	#resume {
+		background-color: #009688 !important;
+	}
+	#contact {
+		background-color: #673AB7 !important;
+	}
+	.flex-item {
+		width: 100%;
+	}
+}

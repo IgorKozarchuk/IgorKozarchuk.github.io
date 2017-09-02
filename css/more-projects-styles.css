@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1;
+}
+
+#work {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+div.w3-top {
+    max-width: 1200px;
+}
+
+ul.w3-navbar img {
+    width: 60px;
+}
+
+#navbar-work-span {
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+}
