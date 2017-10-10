@@ -8,6 +8,10 @@ body {
     flex-direction: column;
 }
 
+input, button, select, textarea, a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 #content {
     flex: 1;
 }

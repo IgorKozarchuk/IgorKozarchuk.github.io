@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -8,6 +9,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+input, button, select, textarea, a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 #content {
     flex: 1;
 }
@@ -42,6 +48,10 @@ a[href="#work"], a[href="#resume"], a[href="#contact"] {
 	position: fixed;
 	right: 10px;
 	bottom: 20px;
+}
+
+#powered-by {
+	font-size: 12px;
 }
 
 @media only screen and (max-width: 600px) {
