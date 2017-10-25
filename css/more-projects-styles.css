@@ -1,32 +1,44 @@
-html {
-    height: 100%;
-}
-
-body {
-    min-height: 100%;
-    position: relative;
-	overflow: hidden;
-    /* display: flex; */
-    /* flex-direction: column; */
-}
-
-input, button, select, textarea, a {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 #work {
     padding-top: 100px;
     padding-bottom: 20px;
+    min-height: 100vh;
 }
 
 div.w3-top {
     max-width: 1200px;
 }
 
-ul.w3-navbar img {
+ul.w3-navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+ul.w3-navbar li h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+ul.w3-navbar li a {
     width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+ul.w3-navbar li a img {
+    width: 100%;
+}
+
+ul.w3-navbar .fa.fa-home {
+    font-size: 30px;
 }
 
 #navbar-work-span {
     font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    font-size: 30px;
+}
+
+.w3-col img {
+	width: 100%;
 }

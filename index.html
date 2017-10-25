@@ -13,143 +13,153 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-
-		<div id="wrapper">
-
-			<div id="content">
-
-				<!-- 1st Grid: About & Works -->
-				<div class="w3-row">
-
-					<div class="w3-half w3-container w3-teal box">
-						<div class="w3-center w3-padding-64">
-							<h1>About Me</h1>
-							<img src="images/avatar.jpg" alt="avatar" style="width: 30%" class="w3-circle">
-							<div>
-								<p>Hi! My name is <strong>Igor Kozarchuk</strong>.</p>
-								<p>I am passionate about front-end development, photography, and basketball.<br>I am also a big fan of alt-J and raccoons (^_^)</p>
-								<a href="#work" class="w3-btn w3-btn-block w3-dark-grey w3-hover-deep-purple w3-padding-16 w3-margin-top w3-margin-bottom">My Work</a>
-								<a href="#resume" class="w3-btn w3-btn-block w3-dark-grey w3-hover-deep-purple w3-padding-16 w3-margin-bottom">Resume</a>
-								<a href="#contact" class="w3-btn w3-btn-block w3-dark-grey w3-hover-deep-purple w3-padding-16">Contact</a>
+		
+		<!-- page-wrapper -->
+		<div id="page-wrapper">
+			<!-- content-wrapper -->
+			<div class="content-wrapper">
+				<!-- content -->
+				<div class="content">
+					<!-- my-table -->
+					<div class="my-table">
+						<div class="my-row">
+							<!-- About -->
+							<div id="about" class="my-col w3-teal w3-center">
+								<div class="w3-padding">
+									<h1>About Me</h1>
+								</div>
+								<img src="images/avatar.jpg" alt="avatar" class="w3-circle">
+								<div>
+									<p>Hi! My name is <strong>Igor Kozarchuk</strong>.</p>
+									<p>I am passionate about front-end development,<br>photography and basketball.<br>I am also a big fan of alt-J and raccoons (^_^)</p>
+									<a href="#work" class="w3-btn w3-btn-block w3-dark-grey w3-hover-deep-purple w3-padding-16 w3-margin-top w3-margin-bottom">My Work</a>
+									<a href="#resume" class="w3-btn w3-btn-block w3-dark-grey w3-hover-deep-purple w3-padding-16 w3-margin-bottom">Resume</a>
+									<a href="#contact" class="w3-btn w3-btn-block w3-dark-grey w3-hover-deep-purple w3-padding-16">Contact</a>
+								</div>
+							</div>
+							<!-- END About -->
+							<!-- My Works -->
+							<div id="work" class="my-col w3-deep-purple w3-center">
+								<div class="w3-padding">
+									<h1>My Work</h1>
+									<p>Some of my latest projects...</p>
+								</div>
+								<div class="w3-row">
+									<div class="w3-half w3-padding-tiny">
+										<a href="http://www.alexander-ko.com/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/alexander-ko.com.jpg" alt="Alexander Kozub" title="3d Visualization - Alexander Kozub"></a>
+									</div>
+									<div class="w3-half w3-padding-tiny">
+										<a href="https://igorkozarchuk.github.io/eyeleotest/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/eyeleo.jpg" alt="eyeleo" title="Animated Paws"></a>
+									</div>
+								</div>
+								<div class="w3-row">
+									<div class="w3-half w3-padding-tiny">
+										<a href="https://igorkozarchuk.github.io/easterdate/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/easterdate.jpg" alt="easter date" title="Easter Date"></a>
+									</div>
+									<div class="w3-half w3-padding-tiny">
+										<a href="https://igorkozarchuk.github.io/manage.items.app/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/manageitems.jpg" alt="manage items app" title="Manage Items - AngularJS App"></a>
+									</div>
+								</div>
+								<div class="w3-row">
+									<div class="w3-half w3-padding-tiny">
+										<a href="https://igorkozarchuk.github.io/GymWebsite/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/gym.jpg" alt="gym" title="Gym Website"></a>
+									</div>
+									<div class="w3-half w3-padding-tiny">
+										<a href="https://igorkozarchuk.github.io/parallax/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/parallax.jpg" alt="parallax" title="Parallax Effect"></a>
+									</div>
+								</div>
+								<div class="w3-padding">
+									<a href="more-projects.html" class="w3-hover-teal">...there are more<i class="fa fa-chevron-right" style="margin-left: 6px;"></i></a>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<div id="work" class="w3-half w3-container w3-deep-purple w3-center box">
-						<div class="w3-padding-64">
-							<h1>My Work</h1>
-							<p>Some of my latest projects...</p>
-						</div>
-						<div class="w3-row">
-							<div class="w3-half w3-padding-tiny">
-								<a href="http://www.alexander-ko.com/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/alexander-ko.com.jpg" alt="Alexander Kozub" title="3d Visualization - Alexander Kozub"></a>
+						<!-- END My Works -->
+						
+						<div class="my-row">
+							<!-- Resume -->
+							<div id="resume" class="my-col w3-deep-purple w3-center">
+								<div class="w3-padding">
+									<h1>Resume</h1>
+									<p>A draft from my CV...</p>
+								</div>
+								<div class="w3-container w3-responsive w3-left-align">
+									<h4>Skills:</h4>
+									<ul>
+										<li>HTML, CSS, W3.CSS, Sass, Font Awesome</li>
+										<li>JavaScript, AngularJS, ReactJS</li>
+										<li>Photoshop (PSD to HTML), Illustrator</li>
+										<li>Algorithms and data structures</li>
+									</ul>
+									<h4>Work experience:</h4>
+									<table class="w3-table">
+										<tr>
+											<th>Year</th>
+											<th>Position</th>
+											<th>Where</th>
+										</tr>
+										<tr>
+											<td>2015 - present</td>
+											<td>Assistant Professor</td>
+											<td>National Transport University</td>
+										</tr>
+									</table>
+									<h4>Education:</h4>
+									<table class="w3-table">
+										<tr>
+											<th>Year</th>
+											<th>Degree</th>
+											<th>Where</th>
+										</tr>
+										<tr>
+											<td>2015</td>
+											<td>PhD in Engineering sciences</td>
+											<td>National Transport University</td>
+										</tr>
+									</table>
+								</div>
 							</div>
-							<div class="w3-half w3-padding-tiny">
-								<a href="https://igorkozarchuk.github.io/eyeleotest/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/eyeleo.jpg" alt="eyeleo" title="Animated Paws"></a>
-							</div>
-						</div>
-						<div class="w3-row">
-							<div class="w3-half w3-padding-tiny">
-								<a href="https://igorkozarchuk.github.io/easterdate/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/easterdate.jpg" alt="easter date" title="Easter Date"></a>
-							</div>
-							<div class="w3-half w3-padding-tiny">
-								<a href="https://igorkozarchuk.github.io/manage.items.app/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/manageitems.jpg" alt="manage items app" title="Manage Items - AngularJS App"></a>
-							</div>
-						</div>
-						<div class="w3-row">
-							<div class="w3-half w3-padding-tiny">
-								<a href="https://igorkozarchuk.github.io/GymWebsite/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/gym.jpg" alt="gym" title="Gym Website"></a>
-							</div>
-							<div class="w3-half w3-padding-tiny">
-								<a href="https://igorkozarchuk.github.io/parallax/" target="_blank"><img class="w3-opacity-min w3-hover-opacity-off" src="images/works/parallax.jpg" alt="parallax" title="Parallax Effect"></a>
-							</div>
-						</div>
-						<div class="w3-padding-large">
-							<a href="more-projects.html" class="w3-hover-teal">...there are more<i class="fa fa-chevron-right" style="margin-left: 6px;"></i></a>
-						</div>
-					</div>
-				</div>
-				<div style="clear: both;"></div>
-				<!-- END of 1st Grid: About & Works -->
-
-				<!-- 2nd Grid: Resume & Contact -->
-				<div class="flex-container">
-
-					<div id="resume" class="flex-item w3-container w3-deep-purple box">
-						<div class="w3-padding-64 w3-center">
-							<h1>Resume</h1>
-							<p>A draft from my CV...</p>
-							<div class="w3-container w3-responsive w3-left-align">
-								<h4>Skills:</h4>
-								<ul>
-									<li>HTML, CSS, W3.CSS, Sass, Font Awesome</li>
-									<li>JavaScript, AngularJS, ReactJS</li>
-									<li>Photoshop (PSD to HTML), Illustrator</li>
-									<li>Algorithms and data structures</li>
+							<!-- END Resume -->
+							<!-- Contact -->
+							<div id="contact" class="my-col w3-teal w3-center">
+								<div class="w3-padding">
+									<h1>Contact</h1>
+									<p>Get in touch <img class="raccoon-img" src="images/raccoon.png" alt="raccoon"></p>
+								</div>
+								<ul class="w3-ul">
+									<li class="w3-padding-16"><i class="fa fa-envelope w3-large"></i> igor.a.kozarchuk@gmail.com</li>
+									<li class="w3-padding-16"><i class="fa fa-phone w3-large"></i> +380 50 280 66 05</li>
+									<li class="w3-padding-16"><i class="fa fa-skype w3-large"></i> igor.kozarchuk</li>
+									<li class="w3-padding-16"><i class="fa fa-facebook-official w3-large"></i> <a href="https://www.facebook.com/igor.kozarchuk" style="text-decoration: none;">Igor Kozarchuk</a></li>
+									<li class="w3-padding-16"><i class="fa fa-github w3-large"></i> <a href="https://github.com/IgorKozarchuk" style="text-decoration: none;">IgorKozarchuk</a></li>
+									<li class="w3-padding-16"><i class="fa fa-map-marker w3-large"></i> Kyiv, Ukraine</li>
 								</ul>
-								<h4>Work experience:</h4>
-								<table class="w3-table">
-									<tr>
-										<th>Year</th>
-										<th>Position</th>
-										<th>Where</th>
-									</tr>
-									<tr>
-										<td>2015 - present</td>
-										<td>Assistant Professor</td>
-										<td>National Transport University</td>
-									</tr>
-								</table>
-								<h4>Education:</h4>
-								<table class="w3-table">
-									<tr>
-										<th>Year</th>
-										<th>Degree</th>
-										<th>Where</th>
-									</tr>
-									<tr>
-										<td>2015</td>
-										<td>PhD in Engineering sciences</td>
-										<td>National Transport University</td>
-									</tr>
-								</table>
 							</div>
+							<!-- END Contact -->
 						</div>
 					</div>
-
-					<div id="contact" class="flex-item w3-container w3-teal box">
-						<div class="w3-padding-64 w3-center">
-							<h1>Contact</h1>
-							<p>Get in touch <img id="raccoon-img" src="images/raccoon.png" alt="raccoon"></p>
-							<ul class="w3-ul">
-								<li class="w3-padding-16"><i class="fa fa-envelope w3-large"></i> igor.a.kozarchuk@gmail.com</li>
-								<li class="w3-padding-16"><i class="fa fa-phone w3-large"></i> +380 50 280 66 05</li>
-								<li class="w3-padding-16"><i class="fa fa-skype w3-large"></i> igor.kozarchuk</li>
-								<li class="w3-padding-16"><i class="fa fa-facebook-official w3-large"></i> <a href="https://www.facebook.com/igor.kozarchuk" style="text-decoration: none;">Igor Kozarchuk</a></li>
-								<li class="w3-padding-16"><i class="fa fa-github w3-large"></i> <a href="https://github.com/IgorKozarchuk" style="text-decoration: none;">IgorKozarchuk</a></li>
-								<li class="w3-padding-16"><i class="fa fa-map-marker w3-large"></i> Kyiv, Ukraine</li>
-							</ul>
-						</div>
-					</div>
-
+					<!-- END my-table -->
 				</div>
-				<!-- END 2nd Grid: Resume & Contact -->
-
+				<!-- END content -->
 			</div>
-			<!-- End Content -->
+			<!-- END content-wrapper -->
+
+			<!-- Up button -->
+			<a id="up-btn" class="w3-btn-floating-large w3-pink"><i class="fa fa-chevron-up"></i></a>
 
 			<!-- Footer -->
-			<footer class="w3-container w3-dark-grey w3-padding-16 w3-center">
-				<p>&copy; Igor Kozarchuk, 2017</p>
-				<p id="powered-by">Powered by <a class="w3-hover-teal" href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+			<footer class="my-footer">
+				<div class="footer-inner w3-dark-grey w3-center">
+					<p>&copy; Igor Kozarchuk, 2017</p>
+					<p class="powered-by">Powered by <a class="w3-hover-teal" href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+				</div>
 			</footer>
 			<!-- END Footer -->
 
-			<a id="up-btn" class="w3-btn-floating-large w3-pink"><i class="fa fa-chevron-up"></i></a>
-	
 		</div>
+		<!-- END page-wrapper -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/scroll.js"></script>
+
 	</body>
 </html>
