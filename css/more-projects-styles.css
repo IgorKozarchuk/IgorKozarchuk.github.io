@@ -21,6 +21,7 @@ ul.w3-navbar li h1 {
 }
 
 ul.w3-navbar li a {
+    height: 60px;
     width: 60px;
     padding: 5px;
     text-align: center;
