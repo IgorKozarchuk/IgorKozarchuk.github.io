@@ -8,13 +8,27 @@ html, body {
 }
 
 body {
-	background-color: #616161;
-	background-image: url("../images/binary-delta.svg");
-	background-size: 160px;
+	font-family: "Ubuntu";
+	font-size: 17px;
+	letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto Slab";
 }
 
 input, button, select, textarea, a {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#bg-container {
+	background-color: #616161;
+	background-image: url("../images/binary-delta.svg");
+	background-size: 160px;
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
 }
 
 #page-wrapper {
@@ -54,6 +68,7 @@ input, button, select, textarea, a {
 
 a[href="#work"], a[href="#resume"], a[href="#contact"] {
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .w3-half img, .w3-third img {
@@ -71,7 +86,7 @@ footer.my-footer {
 }
 
 .powered-by {
-	font-size: 12px;
+	font-size: 13px;
 	color: #a7a7a7;
 }
 
