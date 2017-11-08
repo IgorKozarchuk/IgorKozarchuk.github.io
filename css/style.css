@@ -11,6 +11,10 @@ body {
 	font-family: "Ubuntu";
 	font-size: 17px;
 	letter-spacing: 0.5px;
+	background-color: #616161;
+	background-image: url("../images/binary-delta.svg");
+	background-size: 160px;
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,13 +26,8 @@ input, button, select, textarea, a {
 }
 
 #bg-container {
-	background-color: #616161;
-	background-image: url("../images/binary-delta.svg");
-	background-size: 160px;
-	position: fixed;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
+	
+
 }
 
 #page-wrapper {
