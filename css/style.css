@@ -69,6 +69,10 @@ a[href="#work"], a[href="#resume"], a[href="#contact"] {
 	width: 100%;
 }
 
+#resume td {
+	font-size: 14px;
+}
+
 footer.my-footer {
 	display: table-footer-group; /* sticky footer */	
 }
