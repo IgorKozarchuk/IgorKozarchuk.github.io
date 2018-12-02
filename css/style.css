@@ -13,6 +13,7 @@ body {
 	letter-spacing: 0.5px;
 	background-color: #616161;
 	background-image: url("../images/binary-delta.svg");
+	background-repeat: round;
 	background-size: 160px;
 	background-attachment: fixed;
 }
