@@ -1,0 +1,149 @@
+#ball {
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	bottom: calc(61.8vh - 100px/2); /* ball height / 2 */
+	left: 180px;
+	z-index: 9;
+	border-radius: 50%; /* cut off edges from circumscribed squre */
+	margin: 0; /* overrides w3.css style for img */
+}
+#ball.falling {
+	animation: fall 2.5s linear forwards;
+}
+@keyframes fall {
+	/* *** 1st cycle *** */
+	/* top point */
+	0% {
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(0.8, 0.1, 0.88, 1.0);
+	}
+	/* bounce point */
+	18% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-180deg);
+	}
+	/* squeeze point */
+	20% {
+		bottom: 0;
+		/* ball squeezes by 10% (10px), so we have to move it down by 10px/2=5px (using translateY) on squeeze phase */
+		transform: scale(1.1, 0.9) translateY(5px) rotate(-180deg);
+		animation-timing-function: cubic-bezier(0.08, 0.37, 0.75, 1.0);
+	}
+	/* unsqueeze point */
+	22% {
+		transform: scale(1, 1) translateY(0px) rotate(-185deg);
+	}
+	/* *** 2nd cycle *** */
+	/* top point */
+	34% {
+		bottom: calc(38vh - 100px/2);
+		transform: rotate(-230deg);
+		animation-timing-function: cubic-bezier(0.8, 0.1, 0.88, 1.0);
+	}
+	/* bounce point */
+	46% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-260deg);
+	}
+	/* squeeze point */
+	48.5% {
+		bottom: 0;
+		transform: scale(1.1, 0.9) translateY(5px) rotate(-260deg);
+		animation-timing-function: cubic-bezier(0.08, 0.37, 0.75, 1.0);
+	}
+	/* unsqueeze point */
+	50% {
+		transform: scale(1, 1) translateY(0px) rotate(-264deg);
+	}
+	/* *** 3rd cycle *** */
+	/* top point */
+	60% {
+		bottom: calc(24vh - 100px/2);
+		transform: rotate(-280deg);
+		animation-timing-function: cubic-bezier(0.8, 0.1, 0.88, 1.0);
+	}
+	/* bounce point */
+	70% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-303deg);
+	}
+	/* squeeze point */
+	72% {
+		bottom: 0;
+		transform: scale(1.08, 0.92) translateY(4px) rotate(-303deg);
+		animation-timing-function: cubic-bezier(0.08, 0.37, 0.75, 1.0);
+	}
+	/* unsqueeze point */
+	73% {
+		transform: scale(1, 1) translateY(0px) rotate(-310deg);
+	}
+	/* *** 4th cycle *** */
+	/* top point */
+	80% {
+		bottom: calc(14vh - 100px/2);
+		transform: rotate(-324deg);
+		animation-timing-function: cubic-bezier(0.8, 0.1, 0.88, 1.0);
+	}
+	/* bounce point */
+	87% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-336deg);
+	}
+	/* squeeze point */
+	88.5% {
+		bottom: 0;
+		transform: scale(1.06, 0.94) translateY(3px) rotate(-336deg);
+		animation-timing-function: cubic-bezier(0.08, 0.37, 0.75, 1.0);
+	}
+	/* unsqueeze point */
+	89.5% {
+		transform: scale(1, 1) translateY(0px) rotate(-345deg);
+	}
+	/* *** 5th cycle *** */
+	/* top point */
+	93% {
+		bottom: calc(8vh - 100px/2);
+		transform: rotate(-352deg);
+		animation-timing-function: cubic-bezier(0.8, 0.1, 0.88, 1.0);
+	}
+	/* bounce point */
+	95% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-356deg);
+	}
+	/* squeeze point */
+	96% {
+		bottom: 0;
+		transform: scale(1.04, 0.96) translateY(2px) rotate(-356deg);
+		animation-timing-function: cubic-bezier(0.08, 0.37, 0.75, 1.0);
+	}
+	/* unsqueeze point */
+	96.7% {
+		transform: scale(1, 1) translateY(0px) rotate(-358deg);
+	}
+	/* *** 6th cycle *** */
+	/* top point */
+	97.7% {
+		bottom: calc(5vh - 100px/2);
+		transform: rotate(-359deg);
+		animation-timing-function: cubic-bezier(0.8, 0.1, 0.88, 1.0);
+	}
+	/* bounce point */
+	99% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-360deg);
+	}
+	/* squeeze point */
+	99.5% {
+		bottom: 0;
+		transform: scale(1.02, 0.98) translateY(1px) rotate(-360deg);
+		animation-timing-function: cubic-bezier(0.08, 0.37, 0.75, 1.0);
+	}
+	/* unsqueeze point */
+	100% {
+		bottom: 0;
+		transform: scale(1, 1) translateY(0px) rotate(-360deg);
+	}
+}

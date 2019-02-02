@@ -111,3 +111,29 @@ footer.my-footer {
 		width: 100%;
 	}
 }
+/* ball */
+@media only screen and (max-width: 1775px) {
+	#ball {
+		left: 120px;
+	}
+}
+@media only screen and (max-width: 1654px) {
+	#ball {
+		left: 80px;
+	}
+}
+@media only screen and (max-width: 1576px) {
+	#ball {
+		left: 40px;
+	}
+}
+@media only screen and (max-width: 1495px) {
+	#ball {
+		left: 20px;
+	}
+}
+@media only screen and (max-width: 1455px) {
+	#ball {
+		display: none;
+	}
+}
